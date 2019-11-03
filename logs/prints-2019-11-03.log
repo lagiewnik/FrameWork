@@ -1,0 +1,8 @@
+13:24:19.018 [main] INFO  resources.Base - Navigate to home Page
+13:24:21.681 [main] INFO  resources.Base - Click on login buton -> goto login page
+13:24:22.043 [main] INFO  resources.Base - Write username
+13:24:22.211 [main] INFO  resources.Base - Write password
+13:24:23.920 [main] INFO  resources.Base - Click submit button
+13:24:24.019 [main] INFO  resources.Base - Center text is correct
+13:24:24.165 [main] INFO  resources.Base - Navigation bar is ready
+13:24:24.328 [main] INFO  resources.Base - Driver close
