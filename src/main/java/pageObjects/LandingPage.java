@@ -8,9 +8,10 @@ public class LandingPage {
 
     public WebDriver driver;
 
-    By signIn = By.xpath("//span[contains(.,'Login')]");
-    By centerText = By.xpath(".//div[@class='text-center']/h2");
-    By navBar = By.xpath("//*[contains(@class, 'nav navbar-nav navbar-right')]");
+    private By signIn = By.xpath("//span[contains(.,'Login')]");
+    private By centerText = By.xpath(".//div[@class='text-center']/h2");
+    private By navBar = By.xpath("//*[contains(@class, 'nav navbar-nav navbar-right')]");
+    private  By headerText = By.xpath("//*[contains(@class, 'video-banner')]//h3");
 
 
     public LandingPage(WebDriver driver) {
@@ -31,5 +32,8 @@ public class LandingPage {
     {
         return driver.findElement(navBar);
     }
-
+    public WebElement getHeaderText()
+    {
+        return driver.findElement(headerText);
+    }
 }

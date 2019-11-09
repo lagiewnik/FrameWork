@@ -1,2 +1,9 @@
-13:24:24.454 [main] INFO  resources.Base - Driver Close
-13:24:28.597 [main] INFO  resources.Base - driver close
+15:48:01.856 [main] INFO  resources.Base - Driver close
+15:48:07.751 [main] INFO  resources.Base - Driver is initialized
+15:48:12.369 [main] INFO  resources.Base - URL is geting
+15:48:14.211 [main] INFO  resources.Base - Header text is correct
+15:48:18.358 [main] INFO  resources.Base - Driver Close
+15:48:24.175 [main] INFO  resources.Base - Driver is initialized
+15:48:28.898 [main] INFO  resources.Base - URL is geting
+15:48:29.154 [main] INFO  resources.Base - Navigation bar is ready
+15:48:29.319 [main] INFO  resources.Base - driver close

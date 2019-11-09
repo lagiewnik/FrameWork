@@ -21,7 +21,7 @@ public class ValidateNavigationBar extends Base {
     }
 
     @Test
-    public void basePageNavigation() throws IOException
+    public void validateNavBar() throws IOException
     {
 
 
@@ -36,6 +36,8 @@ public class ValidateNavigationBar extends Base {
 {
     driver.close();
     log.info("driver close");
+    driver=null;
+
 }
 
 }

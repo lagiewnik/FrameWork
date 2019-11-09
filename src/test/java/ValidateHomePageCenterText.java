@@ -14,22 +14,32 @@ public class ValidateHomePageCenterText extends Base {
 
     public static Logger log = LogManager.getLogger(Base.class.getName());
 
+    LandingPage lp;
+
     @BeforeTest
     public void initialize() throws IOException {
         driver = initializeDriver();
         log.info("Driver is initialized");
         driver.get(prop.getProperty("url"));
         log.info("URL is geting");
+
     }
     @Test
-    public void basePageNavigation() throws IOException
+    public void validateCenterText() throws IOException
     {
 
-
-        LandingPage lp = new LandingPage(driver);
+        lp = new LandingPage(driver);
 
         Assert.assertEquals(lp.getCenterText().getText().toLowerCase(), "featured courses");
         log.info("Center text is correct");
+    }
+
+    @Test
+    public void validateHeader() throws IOException
+    {
+        //LandingPage lp = new LandingPage(driver);
+        Assert.assertEquals(lp.getHeaderText().getText().toLowerCase(), "An Academy to learn Everything about Testing".toLowerCase());
+        log.info("Header text is correct");
     }
 
     @AfterTest
@@ -37,6 +47,8 @@ public class ValidateHomePageCenterText extends Base {
     {
         driver.close();
         log.info("Driver Close");
+        driver=null;
+
     }
 
 

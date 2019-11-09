@@ -28,6 +28,8 @@
                                 <suiteXmlFiles>
                                     <suiteXmlFile>testng.xml</suiteXmlFile>
                                 </suiteXmlFiles>
+                                <testFailureIgnore>true</testFailureIgnore>
+                                <shutdown>kill</shutdown> <!-- Use it if required-->
                             </configuration>
                         </plugin>
 
@@ -58,6 +60,26 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>2.12.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>3.1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.relevantcodes</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>2.41.2</version>
         </dependency>
     </dependencies>
 
