@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <parameter name="" value=""/>
+  <listeners>
+    <listener class-name="Listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Validate HomePage TExt(failed)">
+    <classes>
+      <class name="ValidateHomePageCenterText">
+        <methods>
+          <include name="validateCenterText"/>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ValidateHomePageCenterText -->
+    </classes>
+  </test> <!-- Validate HomePage TExt(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

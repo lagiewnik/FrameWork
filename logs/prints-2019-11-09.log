@@ -1,0 +1,8 @@
+15:47:52.265 [main] INFO  resources.Base - Write username
+15:47:52.458 [main] INFO  resources.Base - Write password
+15:47:53.997 [main] INFO  resources.Base - Click submit button
+15:47:56.738 [main] INFO  resources.Base - Navigate to home Page
+15:47:59.569 [main] INFO  resources.Base - Click on login buton -> goto login page
+15:47:59.891 [main] INFO  resources.Base - Write username
+15:48:00.083 [main] INFO  resources.Base - Write password
+15:48:01.679 [main] INFO  resources.Base - Click submit button

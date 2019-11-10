@@ -1,0 +1,9 @@
+19:45:48.811 [main] INFO  resources.Base - Click submit button
+19:45:48.930 [main] INFO  resources.Base - Driver close
+19:45:54.429 [main] INFO  resources.Base - Driver is initialized
+19:45:59.428 [main] INFO  resources.Base - URL is geting
+19:46:00.509 [main] INFO  resources.Base - Header text is correct
+19:46:00.632 [main] INFO  resources.Base - Driver Close
+19:46:06.187 [main] INFO  resources.Base - Driver is initialized
+19:46:11.244 [main] INFO  resources.Base - URL is geting
+19:46:11.390 [main] INFO  resources.Base - Navigation bar is ready
