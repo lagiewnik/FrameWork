@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Test Suite" duration-ms="47226" started-at="2019-11-04T19:45:24 CET" finished-at="2019-11-04T19:46:11 CET">
+    <groups>
+    </groups>
+    <test name="Homepage test" duration-ms="24674" started-at="2019-11-04T19:45:24 CET" finished-at="2019-11-04T19:45:48 CET">
+      <class name="HomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:HomePage@4802796d]" name="initialize" is-config="true" duration-ms="7811" started-at="2019-11-04T19:45:24 CET" finished-at="2019-11-04T19:45:32 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:HomePage@4802796d]" name="basePageNavigation" duration-ms="10594" started-at="2019-11-04T19:45:32 CET" data-provider="getData" finished-at="2019-11-04T19:45:42 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mis@las.pl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dupa123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:HomePage@4802796d]" name="basePageNavigation" duration-ms="6090" started-at="2019-11-04T19:45:42 CET" data-provider="getData" finished-at="2019-11-04T19:45:48 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[staryniedziwdz@las.pl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[458799]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:HomePage@4802796d]" name="tearDown" is-config="true" duration-ms="109" started-at="2019-11-04T19:45:48 CET" finished-at="2019-11-04T19:45:48 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- HomePage -->
+    </test> <!-- Homepage test -->
+    <test name="Validate HomePage TExt" duration-ms="11654" started-at="2019-11-04T19:45:48 CET" finished-at="2019-11-04T19:46:00 CET">
+      <class name="ValidateHomePageCenterText">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ValidateHomePageCenterText@557caf28]" name="initialize" is-config="true" duration-ms="10449" started-at="2019-11-04T19:45:48 CET" finished-at="2019-11-04T19:45:59 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="FAIL" signature="validateCenterText()[pri:0, instance:ValidateHomePageCenterText@557caf28]" name="validateCenterText" duration-ms="80" started-at="2019-11-04T19:45:59 CET" finished-at="2019-11-04T19:45:59 CET">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [featured courses444] but found [featured courses]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [featured courses444] but found [featured courses]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at ValidateHomePageCenterText.validateCenterText(ValidateHomePageCenterText.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCenterText -->
+        <test-method status="PASS" signature="validateHeader()[pri:0, instance:ValidateHomePageCenterText@557caf28]" name="validateHeader" duration-ms="100" started-at="2019-11-04T19:46:00 CET" finished-at="2019-11-04T19:46:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHeader -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ValidateHomePageCenterText@557caf28]" name="tearDown" is-config="true" duration-ms="123" started-at="2019-11-04T19:46:00 CET" finished-at="2019-11-04T19:46:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ValidateHomePageCenterText -->
+    </test> <!-- Validate HomePage TExt -->
+    <test name="Validate NavBar Test" duration-ms="10823" started-at="2019-11-04T19:46:00 CET" finished-at="2019-11-04T19:46:11 CET">
+      <class name="ValidateNavigationBar">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:ValidateNavigationBar@22555ebf]" name="initialize" is-config="true" duration-ms="10585" started-at="2019-11-04T19:46:00 CET" finished-at="2019-11-04T19:46:11 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validateNavBar()[pri:0, instance:ValidateNavigationBar@22555ebf]" name="validateNavBar" duration-ms="144" started-at="2019-11-04T19:46:11 CET" finished-at="2019-11-04T19:46:11 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavBar -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ValidateNavigationBar@22555ebf]" name="tearDown" is-config="true" duration-ms="91" started-at="2019-11-04T19:46:11 CET" finished-at="2019-11-04T19:46:11 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ValidateNavigationBar -->
+    </test> <!-- Validate NavBar Test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
